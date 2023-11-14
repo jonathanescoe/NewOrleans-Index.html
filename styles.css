@@ -67,6 +67,18 @@ nav a:hover::after {
     transform: scaleX(1);
 }
 
+a {
+    color: #6200EA; /* Default link color */
+    text-decoration: none; /* Remove underlines by default */
+    font-weight: normal;
+}
+
+a:hover {
+    color: #311B92; /* Change color on hover */
+    text-decoration: underline; /* Underline on hover */
+    font-weight: bold;
+}
+
 /* Style the main sections */
 section {
     background-color: #FFF;
@@ -120,10 +132,15 @@ section {
 
 /* Style the footer */
 footer {
-    background-color: #7928A1; /* Purple color for the footer */
+    background-color: #7928A1; 
     text-align: center;
     padding: 10px;
     color: #FFF;
+}
+
+footer a {
+    color: #FFF; 
+    font-weight: normal; 
 }
 
 /* Adjust the header and section headings */
@@ -134,4 +151,20 @@ h1, h2 {
 /* Add some margin between the main sections */
 section + section {
     margin-top: 20px;
+}
+
+/* Style the tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #6200EA; /* Purple color for table borders */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
 }
